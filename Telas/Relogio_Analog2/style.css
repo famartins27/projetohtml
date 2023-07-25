@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black url("logo.png") no-repeat;
+  background-position: 50% calc(50% - 12vmin);
+  background-size: 11vmin;
+}
+.clock {
+  background: url("clock.png") no-repeat;
+  background-size: cover;
+  width: 90vmin;
+  height: 90vmin;
+  position: relative;
+}
+.hour,
+.minute,
+.second,
+.cap,
+.digital {
+  transform-origin: center top;
+  border-radius: 1vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.hour {
+  width: 2vmin;
+  height: 24vmin;
+  background-color: cyan;
+  margin-left: -1vmin;
+}
+.minute {
+  width: 1.2vmin;
+  height: 38vmin;
+  background-color: magenta;
+  margin-left: -.6vmin;
+}
+.second {
+  width: .6vmin;
+  height: 40vmin;
+  background-color: orange;
+  margin-left: -.3vmin;
+}
+.cap {
+  width: 4vmin;
+  height: 4vmin;
+  background-color: violet;
+  margin-left: -2vmin;
+  margin-top: -2vmin;
+  border-radius: 50%;
+}
+.digital {
+  display: block;
+  transform: translate(-50%, calc(-50% + 12vmin));
+  font: bold 5vmin "Courier New", monospace;
+  background-color: #e2dfd3;
+  color: #4c4b4a;
+  padding: 0 1vmin;
+}

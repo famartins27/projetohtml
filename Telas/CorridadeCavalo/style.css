@@ -1,0 +1,38 @@
+body {
+  background-color: #F28B0C;
+}
+.kodfun {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: darkgreen;
+  padding: 16px;
+  position: relative;
+}
+.kodfun>img {
+  width: 8rem;
+  height: 5rem;
+  z-index: 99;
+}
+.result {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: darkred;
+  padding: 1rem;
+  font-size: 2rem;
+  z-index: 100;
+}
+.kodfun::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 17rem;
+  border-right: 8px dashed white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
